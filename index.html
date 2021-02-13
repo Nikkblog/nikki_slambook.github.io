@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlamBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ham_style.css">
+
+</head>
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="hamburger_menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+             </div>       
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="login.html" class="nav_link">Login
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="validation.html" class="nav_link">User
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="contact.html" class="nav_link">Contact
+                        </a>
+                    </li>
+                </ul>
+           
+        </nav>
+        <div class="container">
+            <div class="header"><span></span>
+                <div class="logo_head"><h1>Slam</h1></div>
+                <div class="logo_icon"><img src="https://img.icons8.com/cute-clipart/64/000000/book.png"/></div>
+            </div>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <input type="text" name="full_name" placeholder="Full Name"><br>
+        <input type="text" name="relation" placeholder="Relation between u & Nikki"><br>
+        <input type="number" name="ph_no" placeholder="Mobile Number"><br>
+        <input type="date" name="dob" placeholder="Date of birth"><br>
+        <input type="text" name="hate" placeholder="One thing you dislike in Nikki"><br>
+        <input type="text" name="nick_name" placeholder="Any nick name for Nikki"><br>
+        <input type="text" name="like" placeholder="one thing you like in Nikki"><br>
+        <input type="text" name="memory" placeholder="Sweet memories with Nikki"><br>
+        <input type="text" name="song" placeholder="Any song you want to dedicate Nikki"><br>
+        <input type="text" name="color" placeholder="Which color suits Nikki most"><br>
+        <input type="text" name="similar" placeholder="Things that r similar in u & Nikki"><br>
+        <input type="textarea" name="msg" placeholder="Any message for Nikki"><br>
+        <input type="file" name="photo" ><br>
+        <input type="submit" name="submit" value="Submit" class="submit"><br>
+        
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

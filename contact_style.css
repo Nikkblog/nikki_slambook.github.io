@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+html{
+    font-family: 'Jomhuria', cursive;
+}
+body{
+    background-color: aliceblue;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("slambook.jpg") ;
+    padding-bottom: 30px; padding-top: 30px;
+    opacity: 1.3;
+}
+.container{
+    width: 85%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px auto;
+    margin: 50px auto;
+    transition: .3s ease-in-out box-shadow;
+    border-radius: 10px;
+    display: grid;
+}
+.container:hover{
+    box-shadow: 0 0 40px 9px #00000045;
+}
+.header{
+    position: relative;
+    width: 90%;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 50px;
+    background-color:rgb(110, 150, 184);
+    padding: 15px;
+    letter-spacing: 2.5px;
+    border-radius: 20px;
+    transition: .5s;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(30px);
+}
+.header span{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+.header span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+.header div{
+    position: relative;
+    z-index: 10;
+}
+.header .logo_head{
+    font-size: 20px; 
+    color: white; 
+    font-weight: 300;
+}
+.header .logo_icon img{
+    height: 45px;
+    width: 40px; 
+    margin-left: 4px;   
+}
+.heading{
+    color: #29daad;
+    font-size: 13px;
+    font-family: 'Hammersmith One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 40px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+} 
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card{
+    width: 85%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: gray;
+    padding: 50px;
+    border-radius: 15px;
+    transition: .4s ease-in-out transform;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card h1{
+    color: bisque;
+}
+.card h1, p{
+    margin: 5px;
+    letter-spacing: .5px;
+}
+.card a{
+    text-decoration: none;
+    color: white;
+}
+.social_icon{
+    display: flex;
+    width: 80%;
+    justify-content: center;align-items: center;
+    padding: 10px;
+}
+.in, .fb{
+    font-size: 45px;
+}
+
+.social_icon a .fb, .insta, .gh, .in{
+    margin: 10px;
+    padding: 5px;
+    font-size: 35px;
+    transition: .4s ease-in-out transform;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    transition: .5s all background; 
+    border-radius: 12px;
+}
+.social_icon a .insta:hover{
+    transform: scale(1.2);
+    background: linear-gradient(rgba(126, 57, 153, 0.8), rgba(221, 45, 147, 0.9), rgba(212, 14, 14, 0.9));
+}
+.social_icon a .fb:hover, .in:hover{
+    transform: scale(1.2);
+    background: white;
+    color: rgb(51, 51, 223);
+}
+.social_icon a .gh:hover{
+    transform: scale(1.2);
+    background: white;
+    color: black;
+}

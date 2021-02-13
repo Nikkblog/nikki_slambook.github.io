@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;padding: 0; box-sizing: border-box;
+}
+body{
+    font-family: "Dosis", sans-serif;
+}
+
+.navbar{
+    width: 250px;
+    height: 100%;
+    background:linear-gradient( #bb9b42, rgba(196, 76, 136, 0.8));
+    position: fixed;
+    top: 0px;
+    left: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 30% 60% 0;
+    transition: left .3s ease-in-out;
+}
+.change{
+    left: 0;
+}
+.hamburger_menu{
+    width: 45px;
+    height: 40px;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: .3s ease-in-out transform;
+
+}
+.hamburger_menu:hover{
+    transform: scale(1.1);
+}
+.line{
+    width: 70%;
+    height: 3px;
+    background-color: white;  
+    transition: all .3s;  
+}
+.change .line-1{
+    transform: rotatez(-45deg) translate(-8px, 6px);
+}
+.change .line-2{
+opacity: 0;
+}
+.change .line-3{
+    transform: rotatez(45deg) translate(-8px, -6px);
+}
+.nav_list{
+    text-align: left;
+}
+.nav_item{
+    list-style: none;
+    margin: 25px;
+}
+.nav_link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #eee;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
